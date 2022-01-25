@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+	var x1 = +prompt("x1");
+	var y1 = +prompt("y1");
+	var x2 = +prompt("x2");
+	var y2 = +prompt("y2");
+	var k = (y1 - y2)/(x1 - x2);
+	var b = y2 - k*x2;
+	document.write("y = "+k+"x +" + b);
+</script>
+<script type="text/javascript">
+	 var a = 1;
+        var b = 2;
+        var c;
+        console.log(c = a);
+        console.log(a = b);
+       console.log(b = c);
+
+</script>
+<script type="text/javascript">
+       var admin;
+       var name = "Настя";
+       admin = name;
+       console.log(admin);
+       alert(admin);
+</script>
+<script type="text/javascript">
+       var name = prompt("Имя");
+       var surname = prompt("Фамилия");
+       var age = prompt("Возраст");
+       document.write("	Имя: "+name+"; Фамилия: "+surname+"; Возраст: "+age);
+       </script>
+<script type="text/javascript">
+       var age = prompt("Ваш возраст?");
+       var question = confirm("Ваш возраст "+age+" лет?");
+       alert(question);
+    </script>
+
+
+</body>
+</html>
