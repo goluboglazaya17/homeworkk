@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!-- Задача 1 -->
+ <script type="text/javascript">
+     
+        var a = +prompt("Введите первое число");
+        var b = +prompt("Введите второе число");
+        var c = +prompt("Введите третье число");
+        var result;
+
+        if (a !== b && b !== c && c !== a) {
+          result = (a + b + c) / 3;
+          document.write("Среднее арифметическое число: " + result + "; <br>");
+        }
+        if (a === b || b === c || a === c) {
+          document.write("Ошибка! <br>");
+        }
+     
+    </script>
+    	<!-- Задача 2 -->
+ 	  <script type="text/javascript">
+      
+        var space = "&nbsp";
+
+        for (let i = 0; i < 8; i++) {
+          for (let k = 8; k > i - 1; k--) {
+            document.write(space, space);
+          }
+          for (let j = 0; j < i + 1; j++) {
+            document.write("*", space, space);
+          }
+          document.write("<br>");
+        }
+      
+    </script>
+     <!-- Задача 3 -->
+   <script type="text/javascript">
+     
+        var a = +prompt("Введите первое число");
+        var b = +prompt("Введите второе число");
+        var c = +prompt("Введите третье число");
+
+        document.write(`Максимальное введенное число - ${Math.max(a, b, c)}`);
+    </script>
+    <!-- Задача 5 -->
+	 <script type="text/javascript">
+      
+        var n = +prompt("Введите любое число (число Фибоначчи):");
+        var a = 0;
+        var b = 1;
+        var c = 0;
+
+        document.write(`Числа Фибоначчи: ${a}, ${b}, `);
+        for (var i = 0 + 1; i < n; i++) {
+          c = a + b;
+          document.write(`${c}, `);
+          a = b;
+          b = c;
+        }
+      
+    </script>
+
+</body>
+</html>
