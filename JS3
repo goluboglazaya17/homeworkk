@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var x = +prompt("Введите первое число:");
+    var sign = prompt("Введите знак арифметической операции:");
+    var y = +prompt("Введите второе число:");
+    function calculate(operand1, operand2, sign){
+       	if(operand1 && operand2){
+       	if(sign == "+" ){ var result = operand1 + operand2;
+       	document.write(`Ответ : ${result} <br>`)}
+       		else if(sign == '-' ){ var result = operand1 - operand2;
+       		document.write(`Ответ : ${result} <br>`)}
+       			else if(sign == '/' ){ var result = operand1 / operand2;
+       			document.write(`Ответ : ${result} <br>`)}
+       				else if(sign == '*' ){ var result = operand1 * operand2;
+       				document.write(`Ответ : ${result} <br>`)}
+       				    else if(sign == '%' ){ var result = operand1 % operand2;
+       					document.write(`Остаток от деления : ${result} <br>`)}
+       					    else if(sign == '**' ){ var result = operand1 ** operand2;
+       						document.write(`Ответ : ${result} <br>`)}
+       						
+       									else{document.write(`'${sign}' -Такого знака арифметической операции не существует! Попробуйте еще раз. <br>`)};
+       								}
+       								else if(operand1){document.write(`'${operand2}' - извините, но такого числа не существует! Попробуйте еще раз! <br>`)}
+       									else if(operand2){document.write(`'${operand1}' - извините, но такого числа не существует! Попробуйте еще раз! <br>`)};
+       							};
+
+       							calculate(x, y, sign);
+
+  </script>
+  <script type="text/javascript"> 
+
+        		var player = prompt('Игра 1: "Камень-Ножницы-Бумага" \nвведите свой вариант: ');
+        		var computerChoice = Math.random()*100;
+        		var result;
+
+        		function computer(){
+        			if(computerChoice<=30){computerChoice = 'бумага'}
+        				else if(computerChoice>30 && computerChoice<=70){computerChoice = "ножницы"}
+        					else if(computerChoice>70 && computerChoice<=100){computerChoice = "камень"};
+        				alert("Вариант компьютtра : \n${computerChoice}");
+        			};
+
+        			function game(){
+        				if(player == computerChoice){result = "ничья"}
+        					else if(player == "ножницы" && computerChoice == "бумага"){result = "Вы выиграли!"}
+        						else if(player == "бумага" && computerChoice == "камень"){result ="Вы выиграли!"}
+        						else if(player == "камень" && computerChoice == "ножницы"){result = "Вы выиграли!"}
+        							
+        								else{result =" Вы проиграли!"};
+        							alert(result);
+        						};
+
+        						computer();
+        						game();
+  </script>
+  <script type="text/javascript">
+  	var n = +prompt("Введите число из последовательности Фибоначчи: ");
+		var start = +prompt("С какого числа хотите начать ? : ");
+		var step = +prompt("С каким числом хотите считать ? : ");
+		var result;
+
+		function calcFibonacci(a,b){
+			for(i=0; i<n; i++){
+			result = a + b;
+			a=b;
+			b=result;
+		};
+		document.write(`${i}-ое число Фибоначчи : ${result}`);
+	};
+
+	calcFibonacci(start,step);
+
+  </script>
+
+
+</body>
+</html>
